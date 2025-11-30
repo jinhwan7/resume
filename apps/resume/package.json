@@ -1,0 +1,25 @@
+{
+  "name": "jinhwan-resume",
+  "type": "module",
+  "version": "0.0.1",
+   "scripts": {
+    "dev": "NODE_NO_WARNINGS=1 astro dev",
+    "optimize:images": "node scripts/optimize-images.mjs",
+    "download:icons": "node scripts/download-icons.mjs",
+    "prebuild": "pnpm optimize:images && pnpm download:icons",
+    "build": "astro build",
+    "preview": "pnpm build && wrangler pages dev ./dist",
+    "deploy": "pnpm build && wrangler pages deploy ./dist --project-name=resume",
+    "lint": "prettier --write . && eslint . --fix",
+    "lint:check": "prettier --check . && eslint .",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.4.2",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "astro": "^5.16.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}
