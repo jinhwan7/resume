@@ -1,0 +1,225 @@
+---
+import { supportedLanguages } from "@/i18n";
+
+export interface Props {
+  title: string;
+  description: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  lang?: string;
+  keywords?: string;
+  author?: string;
+}
+
+const {
+  title,
+  description,
+  ogTitle = title,
+  ogDescription = description,
+  ogImage,
+  lang = "ko",
+  keywords,
+  author = "Hwan Jin",
+} = Astro.props;
+
+// Always use English OG image as default
+const defaultOgImage = new URL(`/en/og.png`, Astro.url).toString();
+const finalOgImage = ogImage || defaultOgImage;
+
+// Extract path for hreflang, canonical, alternate tags (remove language prefix)
+const pathname = Astro.url.pathname;
+const pathWithoutLang = pathname.replace(/^\/(en|ko)/, "") || "/";
+const siteUrl = "https://jinhwan.app";
+
+// Canonical URL - official URL of current language version
+const canonicalUrl = `${siteUrl}/${lang}${pathWithoutLang}`;
+---
+
+<meta charset="utf-8" />
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="hmart.app" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="generator" content={Astro.generator} />
+<meta name="description" content={description} />
+<meta name="author" content={author} />
+{keywords && <meta name="keywords" content={keywords} />}
+
+<!-- Site Verification -->
+<meta name="naver-site-verification" content="840dadc70eca32a0fe470ccf6455d5ec985c4edf" />
+
+<!-- AI Crawler specific meta tags -->
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="googlebot" content="index, follow" />
+<meta name="bingbot" content="index, follow" />
+
+<!-- Professional Profile Meta Tags -->
+<meta property="profile:first_name" content="Hamin" />
+<meta property="profile:last_name" content="Lee" />
+<meta property="profile:username" content="hmmhmmhm" />
+<meta property="article:author" content={author} />
+
+<!-- LLM-specific meta tags -->
+<meta name="llm:context" content="https://jinhwan.app/llms.txt" />
+<meta name="llm:context:ko" content="https://jinhwan.app/llms-ko.txt" />
+<meta name="ai:purpose" content="professional resume and portfolio" />
+<meta name="ai:category" content="software engineering, full stack development" />
+<meta name="ai:expertise" content="React, Next.js, TypeScript, Node.js, JavaScript, Vue, WebRTC, On-device AI, Robotics" />
+<meta name="ai:role" content="Full Stack Developer, Frontend Developer, Backend Developer, React Developer, Node.js Developer" />
+<meta name="ai:image:profile" content="https://jinhwan.app/image/hamin.webp" />
+<meta name="ai:image:og" content={finalOgImage} />
+<meta name="ai:image:verified" content="true" />
+
+<!-- Search Query Optimization for AI Crawlers -->
+<meta name="ai:search-queries" content="프론트엔드 개발자 이력서, 풀스택 개발자 이력서, frontend developer resume, full stack developer resume, 개발자 이력서, developer resume, 한국 개발자, Korean developer" />
+<meta name="ai:document-type" content="resume, portfolio, professional-profile" />
+<meta name="ai:searchable-content" content="true" />
+
+<!-- Preconnect to external domains for faster resource loading -->
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+<link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+
+<link rel="canonical" href={canonicalUrl} />
+{
+  supportedLanguages.map((locale) => (
+    <link rel="alternate" hreflang={locale} href={`${siteUrl}/${locale}${pathWithoutLang}`} />
+  ))
+}
+<link rel="alternate" hreflang="x-default" href={`${siteUrl}/en${pathWithoutLang}`} />
+
+<!-- LLM Context Links -->
+<link rel="alternate" type="text/plain" href={`${siteUrl}/llms.txt`} title="LLM Context (English)" />
+<link rel="alternate" type="text/plain" href={`${siteUrl}/llms-ko.txt`} title="LLM Context (Korean)" />
+<link rel="alternate" type="application/json" href={`${siteUrl}/.well-known/llm.json`} title="LLM Metadata" />
+
+<!-- RSS Feed -->
+<link rel="alternate" type="application/rss+xml" href={`${siteUrl}/rss.xml`} title="Hamin Lee - Resume & Portfolio RSS Feed" />
+
+<meta property="og:locale" content={lang === "ko" ? "ko_KR" : "en_US"} />
+{
+  supportedLanguages
+    .filter((locale) => locale !== lang)
+    .map((locale) => (
+      <meta property="og:locale:alternate" content={locale === "ko" ? "ko_KR" : "en_US"} />
+    ))
+}
+
+<meta property="og:title" content={ogTitle} />
+<meta property="og:description" content={ogDescription} />
+<meta property="og:image" content={finalOgImage} />
+<meta property="og:image:secure_url" content={finalOgImage} />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Hamin Lee - Full Stack Engineer Profile" />
+<meta property="og:logo" content={new URL("/favicon/favicon-96x96.png", Astro.url).toString()} />
+<meta property="og:type" content="profile" />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:site_name" content="Hamin Lee - Resume & Portfolio" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@hmartapp" />
+<meta name="twitter:creator" content="@hmartapp" />
+<meta name="twitter:title" content={ogTitle} />
+<meta name="twitter:description" content={ogDescription} />
+<meta name="twitter:image" content={finalOgImage} />
+<meta name="twitter:image:alt" content="Hamin Lee - Full Stack Engineer Profile" />
+<title>{title}</title>
+<script>
+  // Lazy load manifest for PWA
+  const loadManifest = () => {
+    const link = document.createElement("link");
+    link.rel = "manifest";
+    link.href = "/favicon/site.webmanifest";
+    document.head.appendChild(link);
+  };
+
+  const ascii = `
+                  .::;;;:.
+               .:;;;:::::;;;:
+              :;;.         :;;.
+             :;:            .;;
+         ::::;:.             .;;:::.
+     .:;;;:::;;;;:.       :;;:;;:::;;;:
+    :;;.     ;; .;;:    .;;:  ;;     :;;.
+   :;:       :;:  :;:  .;;.  ;;.      .;;.
+  .;:         ;;:  :;: ;;  .;;:        .;;
+  :;:          .;;;:;: ;::;;:           ;;.
+  :;:            .::;;;;;:.             ;;
+  .;;.     .:;;;;;;::  :;;;;;;;;:      :;:
+   .;;.  :;;;    ..;;;;;;;:    .;;;.  :;:
+     :;:;;.   .:;;: :;;:..;;;:    ::;;;.
+       ;;:;;;;;::  .;:.;;   :;;;;;;;::
+      :;:          ;;  :;:          ;;.
+      :;.          ;;  .;:          :;.
+      :;:          :;. :;.          ;;
+       :;:         .;;:;:          ;;.
+        ;;:.        .;;:         :;;:
+         .;;;::::::;;::;;;:::::;;;:
+            .:;;;::      .:;;;::
+`;
+
+  const mono =
+    '"SFMono-Regular", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace';
+
+  const printAsciiArt = () => {
+    requestIdleCallback(
+      () => {
+        console.log(
+          "%c" + ascii,
+          `color:#ff4da6; font-family:${mono}; white-space:pre; line-height:1.05;`
+        );
+      },
+      { timeout: 2000 }
+    );
+  };
+
+  const init = () => {
+    loadManifest();
+    printAsciiArt();
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+</script>
+<style is:global>
+  /* Apply text-balance and break-keep to all text elements */
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  td,
+  th,
+  blockquote,
+  figcaption,
+  span,
+  a,
+  label,
+  legend,
+  caption {
+    text-wrap: balance;
+    word-break: keep-all;
+  }
+</style>
+
+<script>
+  // Register service worker and handle updates
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("/sw.js").catch((error) => {
+        console.error(error);
+      });
+    });
+  }
+</script>
