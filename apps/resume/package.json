@@ -20,7 +20,8 @@
     "@types/react-dom": "^19.2.3",
     "astro": "^5.16.0",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "@repo/astro-i18n": "workspace:*"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20251128.0"
