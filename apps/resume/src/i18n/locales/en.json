@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "Hamin Lee - Resume",
+    "title": "Jin Hwan - Resume",
     "description": "Full-stack engineer connecting web, on-device LLM, real-time streaming, and robotics into shippable products.",
-    "portfolioTitle": "Portfolio - Hamin Lee",
+    "portfolioTitle": "Portfolio - Jin Hwan",
     "portfolioDescription": "Software 3.0 - The Era of LLM-Programmable Systems"
   },
   "navbar": {
@@ -18,7 +18,7 @@
     "downloadPDF": "Download PDF for Print",
     "downloadFilename": "Hamin_Lee_Resume.pdf",
     "hero": {
-      "title": "Full-Stack Engineer Hamin Lee",
+      "title": "Full-Stack Engineer Jin Hwan",
       "location": "Ansan, Gyeonggi-do, South Korea",
       "birthDate": "March 4, 1995",
       "age": "30 years old",
@@ -194,7 +194,7 @@
         "role": "Role",
         "roleValue": "CTO and Lead Developer",
         "contribution": "Project Contribution",
-        "contributionValue": "Hamin Lee 50%: Development of DeepRobotics Lite3 robot dog remote control and autonomous navigation system. Robot control via WebRTC-based real-time video streaming and WebSocket communication, SLAM-based mapping and path planning algorithm implementation",
+        "contributionValue": "Jin Hwan 50%: Development of DeepRobotics Lite3 robot dog remote control and autonomous navigation system. Robot control via WebRTC-based real-time video streaming and WebSocket communication, SLAM-based mapping and path planning algorithm implementation",
         "challengesTitle": "Key Technical Challenges",
         "challenge1Title": "Lack of Robot Web Communication Protocol",
         "challenge1Desc": "DeepRobotics Lite3 uses UDP binary protocol, no official web SDK available",
@@ -525,7 +525,7 @@
       "profanityFilteringDesc2": "to prevent exposure to profanity or hard-to-pronounce words.",
       "relatedPaper": "Related Paper",
       "paperTitle": "Base-72 Representation System in Korean Using Syllable Block Structure",
-      "author": "Author: Hamin Lee",
+      "author": "Author: Jin Hwan",
       "publisher": "Publisher: Korean Institute of Communications",
       "publishDate": "Published: 2019",
       "paperDescription": "Developed a base-72 encoding system using pure Korean, inspired by base-32 that mixes letters and numbers. Proposed an algorithm to compress GPS coordinates with 3-meter accuracy into five Korean characters. Based on this paper, developed and published the JavaScript-based open-source implementation 'Mugunghwa Code' on GitHub.",

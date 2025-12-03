@@ -13,6 +13,7 @@ const currentUrl = new URL(Astro.url.pathname, siteUrl).toString();
 const resumeKeywords = (lang === 'ko'
   ? [
       "프론트엔드 개발자 이력서",
+      "백엔드 개발자 이력서",
       "풀스택 개발자 이력서",
       "개발자 이력서",
       "한국 개발자 이력서",
@@ -21,6 +22,7 @@ const resumeKeywords = (lang === 'ko'
     ]
   : [
       "frontend developer resume",
+      "backend developer resume",
       "full stack developer resume",
       "developer resume",
       "Korean developer resume",
@@ -40,7 +42,7 @@ const personSchema = {
     "@type": "ImageObject",
     url: `${siteUrl}${data.avatarUrl}`,
     contentUrl: `${siteUrl}${data.avatarUrl}`,
-    caption: "Hamin Lee - Full Stack Engineer",
+    caption: "Jin Hwan - Full Stack Engineer",
     representativeOfPage: true,
   },
   email: data.contact.email,

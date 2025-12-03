@@ -1,9 +1,6 @@
-import { useEffect, useState } from "preact/hooks";
-import { Moon as MoonIcon, Sun as SunIcon } from "lucide-preact";
+import { useEffect, useState } from "react";
+import { Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const Moon = ({ className, ...props }: any) => <MoonIcon class={className} {...props} />;
-const Sun = ({ className, ...props }: any) => <SunIcon class={className} {...props} />;
 
 export function ModeToggle() {
   const [theme, setTheme] = useState<"light" | "dark">("dark");

@@ -5,10 +5,8 @@ import StructuredData from "@/components/structured-data.astro";
 import ResumePage from "@/components/resume-page";
 import Navbar from "@/components/navbar";
 import "@/styles/global.css";
-
 import { initI18n, extractResumeTranslations, extractNavbarTranslations } from "@/i18n";
 import { getResumeData } from "@/data/get-resume-data";
-
 const { language, t } = initI18n(Astro);
 
 const pageTitle = t("meta.title");
@@ -20,7 +18,7 @@ const resumeData = getResumeData(t);
 // SEO Keywords for AI crawlers
 const keywords = language === 'ko' 
   ? "백엔드 개발자 이력서, 풀스택 개발자 이력서, 백엔드 개발자, 풀스택 개발자, Full Stack Engineer, 진환, Jin Hwan, Hwan Jin, 웹 개발자, React, Nest.js, Next.js, TypeScript, Node.js, WebRTC, AI, LLM, AI, 로보틱스, 개발자 이력서, 포트폴리오, 개발자 채용, 한국 개발자"
-  : "frontend developer resume, full stack developer resume, frontend developer, full stack developer, Full Stack Engineer, Hamin Lee, Web Developer, React, Next.js, TypeScript, Node.js, WebRTC, AI, LLM, On-device AI, Robotics, developer resume, portfolio, developer hiring, Korean developer";
+  : "frontend developer resume, full stack developer resume, frontend developer, full stack developer, Full Stack Engineer, Jin Hwan, Web Developer, React, Next.js, TypeScript, Node.js, WebRTC, AI, LLM, On-device AI, Robotics, developer resume, portfolio, developer hiring, Korean developer";
 
 // Check if nonav query parameter is present
 const hideNavbar = Astro.url.searchParams.has('nonav');
@@ -33,7 +31,7 @@ const hideNavbar = Astro.url.searchParams.has('nonav');
       description={pageDescription} 
       lang={language}
       keywords={keywords}
-      author="Hamin Lee"
+      author="Jin Hwan"
     />
     <StructuredData lang={language} data={resumeData} pageType="resume" />
     <script is:inline>

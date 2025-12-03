@@ -66,6 +66,8 @@ export const DATA = {
   ],
   contact: {
     email: "your-email@example.com", // TODO: 본인의 이메일로 변경
+    github: "https://github.com/username", // TODO: 본인의 GitHub 링크로 변경
+    blog: "https://yourblog.com", // TODO: 본인의 블로그 링크로 변경 (또는 제거)
     kakao: "https://open.kakao.com/me/yourname", // TODO: 본인의 카카오톡 링크로 변경
     twitter: "https://x.com/yourname", // TODO: 본인의 트위터 링크로 변경 (또는 제거)
   },
