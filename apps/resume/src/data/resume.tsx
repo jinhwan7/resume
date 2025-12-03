@@ -11,8 +11,8 @@ export const DATA = {
   url: "https://allmightguy.com",
   location: "대한민국 서울",
   locationLink: "https://www.google.com/maps/place/south-korea",
-  birthDate: "1993년 06월 07일",
-  age: "33",
+  birthDate: "1993-06-07",
+  age: "32",
   gender: "남성",
   description:
     "풀스택 엔지니어를 지향하며, 실제 테스트와 측정을 통해 성능 개선을 확인하는 과정에 큰 즐거움을 느낍니다.",
@@ -65,8 +65,8 @@ export const DATA = {
     { href: "/ko/side", icon: SideIcon, label: "사이드", key: "side" },
   ],
   contact: {
-    email: "your-email@example.com", // TODO: 본인의 이메일로 변경
-    github: "https://github.com/username", // TODO: 본인의 GitHub 링크로 변경
+    email: "rkflql851@gmail.com",
+    github: "https://github.com/jinhwan7",
     blog: "https://yourblog.com", // TODO: 본인의 블로그 링크로 변경 (또는 제거)
     kakao: "https://open.kakao.com/me/yourname", // TODO: 본인의 카카오톡 링크로 변경
     twitter: "https://x.com/yourname", // TODO: 본인의 트위터 링크로 변경 (또는 제거)

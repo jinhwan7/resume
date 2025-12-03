@@ -7,7 +7,7 @@ export function getResumeData(t: TFunction) {
     ...DATA,
     location: t("data.location"),
     birthDate: t("data.birthDate"),
-    age: t("data.age"),
+    age: new Date().getFullYear() - new Date(t("data.birthDate")).getFullYear(),
     gender: t("data.gender"),
     description: t("data.description"),
     summary: t("data.summary"),
@@ -24,12 +24,12 @@ export function getResumeData(t: TFunction) {
         description: t(`data.work.${key}.description`),
       };
     }),
-    education: DATA.education.map((edu) => ({
+    education: DATA.education.map((edu: any) => ({
       ...edu,
       school: t("data.education.hanbat.school"),
       degree: t("data.education.hanbat.degree"),
     })),
-    projects: DATA.projects.map((project, index) => {
+    projects: DATA.projects.map((project: any, index) => {
       const keys = ["akaBrowser", "groundCodes", "postRun", "fridayGPT"];
       const key = keys[index];
       const titleKey = `data.projects.${key}.title`;
@@ -39,7 +39,7 @@ export function getResumeData(t: TFunction) {
         description: t(`data.projects.${key}.description`),
       };
     }),
-    hackathons: DATA.hackathons.map((hackathon, index) => {
+    hackathons: DATA.hackathons.map((hackathon: any, index) => {
       const keys = [
         "hanghae",
         "socialVenture",
@@ -60,7 +60,7 @@ export function getResumeData(t: TFunction) {
       }
       return result;
     }),
-    publications: DATA.publications.map((pub, index) => {
+    publications: DATA.publications.map((pub: any, index) => {
       const keys = ["cleanVibeCoding", "mugunghwa"];
       const key = keys[index];
       return {

@@ -78,7 +78,7 @@ const personSchema = {
       name: lang === 'ko' ? "대한민국" : "South Korea",
     },
     skills: data.skills.map((skill: any) => skill.name).join(", "),
-    description: data.summary,
+    description: data.description,
   },
 };
 
@@ -96,7 +96,7 @@ const resumeCreativeWorkSchema = {
     lang === 'ko'
       ? `${data.name} 개발자 이력서`
       : `${data.name} Developer Resume`,
-  description: data.summary,
+  description: data.description,
   inLanguage: lang === 'ko' ? 'ko-KR' : 'en-US',
   author: {
     "@id": `${siteUrl}/#person`,
