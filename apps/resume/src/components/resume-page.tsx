@@ -95,7 +95,7 @@ export default function ResumePage({
   const resumeData = data || DATA;
   const [isDownloading, setIsDownloading] = useState(false);
 
-  const handleDownload = async (e: Event) => {
+  const handleDownload = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     setIsDownloading(true);
 
@@ -387,7 +387,7 @@ export default function ResumePage({
                   </div>
                   {publication.links && publication.links.length > 0 ? (
                     <div className="flex flex-col gap-3">
-                      {publication.links.map((link, linkId) => (
+                      {publication.links.map((link: { href: string; type: string }, linkId: number) => (
                         <a
                           key={linkId}
                           href={link.href}

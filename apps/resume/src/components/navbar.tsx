@@ -75,7 +75,7 @@ export default function Navbar({
                         : undefined
                     }
                   >
-                    <item.icon class="size-4 shrink-0" />
+                    <item.icon className="size-4 shrink-0" />
                     {isMainNavItem(localizedHref) && (
                       <span className="text-sm font-medium whitespace-nowrap">
                         {translatedLabel}
