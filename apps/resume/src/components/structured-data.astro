@@ -7,20 +7,20 @@ export interface Props {
 
 const { lang, data, pageType = 'resume' } = Astro.props;
 
-const siteUrl = "https://mysite.com";
+const siteUrl = "https://allmighyguy.com";
 const currentUrl = new URL(Astro.url.pathname, siteUrl).toString();
 
 const resumeKeywords = (lang === 'ko'
   ? [
-      "프론트엔드 개발자 이력서",
-      "백엔드 개발자 이력서",
+      "백엔드 개발자 이력서",    
+      "프론트엔드 개발자 이력서",      
       "풀스택 개발자 이력서",
       "개발자 이력서",
       "한국 개발자 이력서",
       "프론트엔드 개발자",
       "풀스택 개발자",
     ]
-  : [
+  : [    
       "frontend developer resume",
       "backend developer resume",
       "full stack developer resume",
@@ -52,7 +52,7 @@ const personSchema = {
   sameAs: [
     data.contact.twitter,
     data.contact.kakao,
-    "https://github.com/hmmhmmhm",
+    "https://github.com/jinhwan7",
   ].filter(Boolean),
   address: {
     "@type": "PostalAddress",

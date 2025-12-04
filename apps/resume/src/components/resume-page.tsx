@@ -424,7 +424,7 @@ export default function ResumePage({
           </div>
         </div>
       </section>
-      <section id="publications">
+      {/* <section id="publications">
         <div className="space-y-8 w-full py-6" style={{ marginTop: "-60px" }}>
           <BlurFade delay={BLUR_FADE_DELAY * 11.5}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -548,8 +548,8 @@ export default function ResumePage({
             ))}
           </div>
         </div>
-      </section>
-      <section id="hackathons">
+      </section> */}
+      {/* <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -587,7 +587,7 @@ export default function ResumePage({
             ))}
           </ul>
         </div>
-      </section>
+      </section> */}
       <section id="contact">
         <div
           className="w-full pt-4 pb-8 sm:pb-4"

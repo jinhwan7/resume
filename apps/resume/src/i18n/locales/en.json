@@ -16,7 +16,7 @@
   },
   "resume": {
     "downloadPDF": "Download PDF for Print",
-    "downloadFilename": "Hamin_Lee_Resume.pdf",
+    "downloadFilename": "Jin_Hwan_Resume.pdf",
     "hero": {
       "title": "Full-Stack Engineer Jin Hwan",
       "location": "Ansan, Gyeonggi-do, South Korea",
@@ -102,7 +102,7 @@
   },
   "portfolio": {
     "downloadPDF": "Download PDF for Print",
-    "downloadFilename": "Hamin_Lee_Portfolio.pdf",
+    "downloadFilename": "Jin_Hwan_Portfolio.pdf",
     "pageNumber": "Page"
   },
   "notFound": {
