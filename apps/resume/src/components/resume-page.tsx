@@ -165,12 +165,9 @@ export default function ResumePage({
                 </div>
               </BlurFade>
               <BlurFade delay={BLUR_FADE_DELAY * 2.5}>
-                <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm mt-4">
+                <div className="flex flex-col gap-y-2 text-sm mt-4">
                   {resumeData.contact.email && (
-                    <a
-                      href={`mailto:${resumeData.contact.email}`}
-                      className="flex items-center gap-1.5 hover:underline text-black dark:text-white"
-                    >
+                    <div className="flex items-center gap-1.5 text-black dark:text-white">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -187,7 +184,7 @@ export default function ResumePage({
                         <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                       </svg>
                       <span>{resumeData.contact.email}</span>
-                    </a>
+                    </div>
                   )}
                   {resumeData.contact.github && (
                     <a
@@ -265,7 +262,7 @@ export default function ResumePage({
                         <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
                         <path d="M2 12h20" />
                       </svg>
-                      <span>웹사이트</span>
+                      <span>{resumeData.url}</span>
                     </a>
                   )}
                 </div>
@@ -317,7 +314,7 @@ export default function ResumePage({
                 href={work.href}
                 badges={work.badges}
                 period={`${work.start} - ${work.end ?? "Present"}`}
-                description={work.description}
+                projects={work.projects}
               />
             </BlurFade>
           ))}
