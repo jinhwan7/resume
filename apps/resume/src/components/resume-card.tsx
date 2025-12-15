@@ -5,6 +5,7 @@ import { Card, CardHeader } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ChevronRight as ChevronRightIcon } from "lucide-react";
+import { Markdown } from "./markdown";
 
 const ChevronRight = ({ className, ...props }: any) => (
   <ChevronRightIcon className={className} {...props} />
@@ -129,26 +130,29 @@ export const ResumeCard = ({
               className="mt-2 space-y-4"
             >
               {projects.map((project, index) => (
-                <div key={index} className="text-xs sm:text-sm">
-                  <h4 className="font-semibold text-sm mb-1">
-                    {project.title}
-                  </h4>
-                  <p className="text-muted-foreground mb-2">
-                    {project.description}
-                  </p>
-                  {project.techStack && project.techStack.length > 0 && (
-                    <div className="flex flex-wrap gap-1">
-                      {project.techStack.map((tech, techIndex) => (
-                        <Badge
-                          key={techIndex}
-                          variant="outline"
-                          className="text-xs"
-                        >
-                          {tech}
-                        </Badge>
-                      ))}
-                    </div>
-                  )}
+                <div key={index}>
+                  {index > 0 && <div className="border-t border-border my-4" />}
+                  <div className="text-xs sm:text-sm">
+                    <h4 className="font-semibold text-sm mb-1">
+                      {project.title}
+                    </h4>
+                    <Markdown className="prose max-w-full text-pretty font-sans text-xs sm:text-sm text-muted-foreground dark:prose-invert mb-2">
+                      {project.description}
+                    </Markdown>
+                    {project.techStack && project.techStack.length > 0 && (
+                      <div className="flex flex-wrap gap-1">
+                        {project.techStack.map((tech, techIndex) => (
+                          <Badge
+                            key={techIndex}
+                            variant="outline"
+                            className="text-xs"
+                          >
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 </div>
               ))}
             </motion.div>

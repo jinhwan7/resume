@@ -9,11 +9,6 @@ export const DATA = {
   name: "Jin Hwan",
   initials: "JH",
   url: "https://allmightguy.com",
-  location: "대한민국 서울",
-  locationLink: "https://www.google.com/maps/place/south-korea",
-  birthDate: "1993-06-07",
-  age: "32",
-  gender: "남성",
   description:
     "풀스택 엔지니어를 지향하며, 실제 테스트와 측정을 통해 성능 개선을 확인하는 과정에 큰 즐거움을 느낍니다.",
   summary:
@@ -54,6 +49,7 @@ export const DATA = {
     { href: "/ko/side", icon: SideIcon, label: "사이드", key: "side" },
   ],
   contact: {
+    phone: "+82 10-7134-3292",
     email: "rkflql851@gmail.com",
     github: "https://github.com/jinhwan7",
     blog: "https://hwansci.tistory.com/",
@@ -68,45 +64,49 @@ export const DATA = {
       badges: [],
       location: "대한민국",
       title:
-        "AI Agent를 활용 NH투자증권, 삼성증권, 한화생명 등 금융권 대상 리라이팅 '쉽게'라는 프로덕트 제공",
+        "AI 기반으로 NH투자증권, 삼성증권, 한화생명 등 금융권 대상 UX 라이팅 & 콘텐츠 최적화 자동화 플랫폼",
       logoUrl: "/image/eeboon_logo.webp",
       start: "2025년 3월",
       end: "2025년 10월",
       projects: [
         {
-          title: "CI/CD 파이프라인 구축 및 최적화",
+          title: "회사 전체 프로덕트 풀스텍 개발 및 유지보수 담당",
           description:
-            "프로덕트 전체 CI/CD 신규 구현 및 유지보수. Docker Compose + ECR 환경 최적화.",
-          techStack: ["Docker", "AWS ECR", "CI/CD"],
+            "- 클라이언트 웹 어플리케이션 개발 및 유지보수\n- 관리자 대시보드 개발 및 유지보수\n- 번역 API 외부 파트너사에 제공 및 유지보수\n- Figma Plugin 유지 보수\n- 프로덕트 전체 CI/CD 신규 구현 및 유지 보수",
+          techStack: [
+            "Nestj.js",
+            "FastApi",
+            "React",
+            "AWS",
+            "CI/CD",
+            "Docker",
+            "styled-components",
+            "antd",
+          ],
         },
         {
-          title: "운영 환경 리팩토링",
+          title: "운영 환경 리팩토링하여 유지보수성 향상",
           description:
-            "불필요한 코드, 저장소, AWS 클라우드 자원 등을 정리하여 가시성과 유지보수성 향상.",
-          techStack: ["AWS", "Refactoring"],
+            "불필요한 코드, 저장소, aws 클라우드 자원, 사내 문서를 정리하여 운영 환경의 가시성과 유지보수성 향상.",
+          techStack: ["Github", "AWS", "MongoDB", "Notion"],
         },
         {
-          title: "API 성능 최적화",
-          description: "API 응답시간을 수분에서 8초 이내로 단축.",
+          title: "API 응답시간 단축",
+          description:
+            "- 제공 중인 번역 api의 불필요한 로직들을 선별하고 제거하여 응답시간을 3분에서 8초 이내로 단축함\n- AI 모델 서빙 서버(fastapi) 인스턴스 타입별 비용·성능 비교 + INT8 양자화 실험 + 최종 최적화 : 24초 -> 4초\n- 형태소 분석기(mecab)가 기존에는 콜드 스타트 였던 것을 찾아내서 -> 핫 스타트 방식으로 변경\n- 서버 스펙 확인 후 텍스트 임베딩 방식을 병렬 처리 -> 배치 처리 방식으로 변경하여 약 3초 정도 단축",
           techStack: ["Performance Optimization"],
         },
         {
-          title: "AI 모델 서빙 서버 개선",
+          title: "ppt파일 텍스트 리라이팅 기능 신규 개발",
           description:
-            "AI 모델 서빙 서버를 레이어드 아키텍처 기반으로 리팩토링. 처리 시간을 24초에서 4초로 최적화.",
+            "- ECMA-376 Office Open XML file formats 문서 분석\n- pptx-automizer 라이브러리의 내부 구조를 분석\n- 해당 라이브러리는 중복된 elementId(<p:cNvPr>태그의 name 요소)는 수정이 불가능 함을 확인\n- 다중 요소 수정이 가능한 로직 추가함",
           techStack: ["Python", "Architecture", "Performance"],
         },
         {
-          title: "Figma Plugin 및 PPTX 기능 개발",
+          title: "AI 모델 서빙 서버 구현",
           description:
-            "Figma Plugin 유지보수. pptx-automizer 라이브러리 분석 및 다중 요소 수정 로직 추가.",
+            "- 단일 API 기반 서비스가 기능 확장으로 복잡도가 증가하여 이를 해결하기 위해 구조적인 문제를 분석해서 모듈화, 레이어드 아키텍처 기반으로 코드 구조를 리팩토링하여 유지보수성 향상\n- Docker Compose + ECR 환경을 최적화하여 이미지 빌드 및 배포 시간을 최소화하고 운영 효율을 개선함.",
           techStack: ["Figma", "TypeScript"],
-        },
-        {
-          title: "풀스택 프로덕트 개발",
-          description:
-            "클라이언트 웹 어플리케이션, 관리자 대시보드, API 서비스 관리자 대시보드 개발 및 유지보수.",
-          techStack: ["Next.js", "React", "Node.js"],
         },
       ],
     },

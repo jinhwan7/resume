@@ -119,7 +119,7 @@ export default function ResumePage({
   };
 
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-10 max-w-2xl mx-auto pt-30 pb-12 sm:pt-24 sm:pb-24 px-6">
+    <main className="flex flex-col min-h-[100dvh] space-y-10 max-w-3xl mx-auto pt-30 pb-12 sm:pt-24 sm:pb-24 px-6">
       <button
         onClick={handleDownload}
         disabled={isDownloading}
@@ -149,7 +149,7 @@ export default function ResumePage({
                 delay={BLUR_FADE_DELAY}
                 text={resumeData.summary}
               />
-              <BlurFade delay={BLUR_FADE_DELAY * 2}>
+              {/* <BlurFade delay={BLUR_FADE_DELAY * 2}>
                 <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-black dark:text-white mt-4">
                   <div className="flex items-center gap-1">
                     <span>
@@ -163,9 +163,28 @@ export default function ResumePage({
                     <span>{resumeData.location}</span>
                   </div>
                 </div>
-              </BlurFade>
+              </BlurFade> */}
               <BlurFade delay={BLUR_FADE_DELAY * 2.5}>
                 <div className="flex flex-col gap-y-2 text-sm mt-4">
+                  {resumeData.contact.phone && (
+                    <div className="flex items-center gap-1.5 text-black dark:text-white">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="size-4"
+                      >
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                      </svg>
+                      <span>{resumeData.contact.phone}</span>
+                    </div>
+                  )}
                   {resumeData.contact.email && (
                     <div className="flex items-center gap-1.5 text-black dark:text-white">
                       <svg

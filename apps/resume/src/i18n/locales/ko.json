@@ -19,9 +19,6 @@
     "downloadFilename": "진환_이력서.pdf",
     "hero": {
       "title": "풀스텍 엔지니어 진환",
-      "location": "서울, 대한민국",
-      "birthDate": "1993년 06월 07일",
-      "gender": "남성 (He, Him)",
       "summury": "풀스택 엔지니어를 지향하며, 폭넓은 개발 경험을 통해 새로운 환경에서도 빠르게 학습하고 유연하게 적응하는 역량을 갖추고 있습니다.",
       "description": "웹·앱·AI Agent·위치 기반 서비스 등 다수의 프로젝트를 주도적으로 경험한 풀스택 엔지니어입니다. Django·FastAPI·Flutter·Spring·NestJS 등 폭넓은 기술 스택을 실무에 활용해왔으며, AWS·GCP·NaverCloud 환경에서의 인프라 구축 및 운영 경험을 통해 새로운 기술과 환경을 빠르게 소화하는 능력을 갖추고 있습니다."
     },
@@ -58,7 +55,7 @@
     "birthDate": "1993-06-07",
     "gender": "남성 (He, Him)",
     "summary": "풀스택 엔지니어를 지향하며, 폭넓은 개발 경험을 통해 새로운 환경에서도 빠르게 학습하고 유연하게 적응하는 역량을 갖추고 있습니다.",
-    "description": "• 웹 · 앱 · AI Agent 등 다수의 프로젝트를 주도적으로 경험한 풀스택 엔지니어입니다.\n• Node.js(Nest.js) 백엔드 개발을 중심으로 Django · FastAPI · Flutter 등 폭넓은 기술 스택을 실무에 활용해왔습니다.\n• Docker 컨테이니제이션 및 AWS · GCP · Cloudflare · NCP 등 다양한 클라우드 provider를 통해 인프라 구축 및 운영 경험 보유.\n• 로드 테스트 및 테스트 코드를 통한 안정적인 서비스 운영 경험. \n• 위와 같은 경험을 통해 새로운 기술과 환경을 빠르게 소화하는 능력을 갖추고 있습니다.",
+    "description": "• 웹 · 앱 · AI Agent 등 다수의 프로젝트를 주도적으로 경험한 풀스택 엔지니어입니다.\n• Node.js(Nest.js) 백엔드 개발을 중심으로 Django · FastAPI · Flutter 등 폭넓은 기술 스택을 실무에 활용해왔습니다.\n• Docker 컨테이니제이션 및 AWS · GCP · Cloudflare · NCP 등 다양한 클라우드 provider를 통해\n 인프라 구축 및 운영 경험 보유.\n• 로드 테스트 및 테스트 코드를 통한 안정적인 서비스 운영 경험. \n• 위와 같은 경험을 통해 새로운 기술과 환경을 빠르게 소화하는 능력을 갖추고 있습니다.",
     "work": {
       "eeboon": {
         "company": "주식회사이분",
