@@ -61,40 +61,100 @@
     "gender": "",
     "description": "Aspiring full-stack engineer who finds great joy in confirming performance improvements through actual testing and measurement.",
     "summary": "Aspiring full-stack engineer who finds great joy in confirming performance improvements through actual testing and measurement. I enjoy directly applying new technologies and diverse knowledge, and love the exploratory process of gradually clarifying concepts that were previously unclear.",
-    "work": {
-      "eeboon": {
+    "work": [
+      {
         "company": "Eeboon Inc.",
         "title": "Full-Stack Developer",
         "location": "South Korea",
         "start": "March 2025",
-        "end": "Present",
-        "description": "Responsible for full-stack development and maintenance of company products. Developed and maintained client web applications, admin dashboard, and API service admin dashboard. Maintained Figma Plugin. Implemented and maintained CI/CD for entire product suite. Refactored operating environment to improve visibility and maintainability by organizing unnecessary code, repositories, and AWS cloud resources. Reduced API response time (from minutes → within 8 seconds). Optimized AI model serving server (24 seconds → 4 seconds). Analyzed pptx-automizer library and added multi-element modification logic. Refactored AI model serving server based on layered architecture. Optimized Docker Compose + ECR environment."
+        "end": "October 2025",
+        "description": "Responsible for full-stack development and maintenance of company products. Developed and maintained client web applications, admin dashboard, and API service admin dashboard. Maintained Figma Plugin. Implemented and maintained CI/CD for entire product suite. Refactored operating environment to improve visibility and maintainability by organizing unnecessary code, repositories, and AWS cloud resources. Reduced API response time (from minutes → within 8 seconds). Optimized AI model serving server (24 seconds → 4 seconds). Analyzed pptx-automizer library and added multi-element modification logic. Refactored AI model serving server based on layered architecture. Optimized Docker Compose + ECR environment.",
+        "projects": [
+          {
+            "title": "Full-stack development and maintenance of all company products",
+            "description": "- Client web application development and maintenance\n- Admin dashboard development and maintenance\n- Translation API provision to external partners and maintenance\n- Figma Plugin maintenance\n- New CI/CD implementation and maintenance for entire product suite"
+          },
+          {
+            "title": "Refactored operating environment to improve maintainability",
+            "description": "Improved visibility and maintainability of the operating environment by organizing unnecessary code, repositories, AWS cloud resources, and internal documentation."
+          },
+          {
+            "title": "Reduced API response time",
+            "description": "- Reduced response time of translation API from 3 minutes to within 8 seconds by identifying and removing unnecessary logic\n- AI model serving server (FastAPI) optimization through instance type cost/performance comparison + INT8 quantization experiments: 24s → 4s\n- Found that morphological analyzer (mecab) was using cold start → changed to hot start approach\n- Changed text embedding from parallel processing → batch processing after checking server specs, reducing time by ~3 seconds"
+          },
+          {
+            "title": "Newly developed PPT file text rewriting feature",
+            "description": "- Analyzed ECMA-376 Office Open XML file formats documentation\n- Analyzed internal structure of pptx-automizer library\n- Confirmed that duplicate elementId (name element of <p:cNvPr> tag) cannot be modified in the library\n- Added logic to enable multi-element modifications"
+          },
+          {
+            "title": "Implemented AI model serving server",
+            "description": "- Improved maintainability by analyzing structural issues and refactoring code structure based on modularization and layered architecture to address increasing complexity due to feature expansion in single API-based service\n- Improved operational efficiency by optimizing Docker Compose + ECR environment to minimize image build and deployment time."
+          }
+        ]
       },
-      "tax": {
-        "company": "Tax Accounting Together",
+      {
+        "company": "Withuscpa",
         "title": "Backend Developer",
         "location": "South Korea",
         "start": "February 2025",
         "end": "March 2025",
-        "description": "Tax accounting SaaS backend development. Responsible for Nest.js backend development. Implemented and modularized business logic reflecting various calculation rules (deduction items, ratio calculations, amount range conditions, etc.)."
+        "description": "Tax accounting SaaS backend development. Responsible for Nest.js backend development. Implemented and modularized business logic reflecting various calculation rules (deduction items, ratio calculations, amount range conditions, etc.).",
+        "projects": [
+          {
+            "title": "Tax accounting SaaS backend development",
+            "description": "Implemented and modularized business logic reflecting various calculation rules (deduction items, ratio calculations, amount range conditions, etc.)."
+          }
+        ]
       },
-      "megapress": {
+      {
         "company": "Megapress Inc.",
         "title": "Backend Developer",
         "location": "South Korea",
         "start": "April 2023",
         "end": "January 2025",
-        "description": "Migrated from Express to NestJS to improve standardized development environment and maintainability. Applied hexagonal architecture. Integrated Next.js/NestJS services into Turborepo + pnpm-based monorepo to establish common module reuse system and eliminate duplicate code. Checked service stability through load testing with ngrinder. Managed AWS infrastructure (EC2 monitoring, new site domain setup)."
+        "description": "Migrated from Express to NestJS to improve standardized development environment and maintainability. Applied hexagonal architecture. Integrated Next.js/NestJS services into Turborepo + pnpm-based monorepo to establish common module reuse system and eliminate duplicate code. Checked service stability through load testing with ngrinder. Managed AWS infrastructure (EC2 monitoring, new site domain setup).",
+        "projects": [
+          {
+            "title": "NestJS Migration",
+            "description": "Migrated from Express to NestJS to improve standardized development environment and maintainability. Applied hexagonal architecture."
+          },
+          {
+            "title": "Monorepo Setup",
+            "description": "Integrated Next.js/NestJS services into Turborepo + pnpm-based monorepo to establish common module reuse system and eliminate duplicate code."
+          },
+          {
+            "title": "Load Testing and Performance Verification",
+            "description": "Checked service stability through load testing with ngrinder."
+          },
+          {
+            "title": "AWS Infrastructure Management",
+            "description": "Managed AWS infrastructure including EC2 monitoring and new site domain setup."
+          }
+        ]
       },
-      "buymeslim": {
-        "company": "Buy Me Slim",
+      {
+        "company": "Bymisslim",
         "title": "Full-Stack Developer (Freelance)",
         "location": "South Korea",
         "start": "September 2024",
         "end": "November 2025",
-        "description": "Developed and maintained clothing fitting reservation app. Developed backend server with Python/Django, handled REST API with DRF, implemented login and reservation-related CRUD. Improved customer convenience with SmartStore crawling. Developed cross-platform app with Flutter, managed state with Provider package, applied MVVM design pattern. Developed admin page with Next.js."
+        "description": "Developed and maintained clothing fitting reservation app. Developed backend server with Python/Django, handled REST API with DRF, implemented login and reservation-related CRUD. Improved customer convenience with SmartStore crawling. Developed cross-platform app with Flutter, managed state with Provider package, applied MVVM design pattern. Developed admin page with Next.js.",
+        "projects": [
+          {
+            "title": "Backend Server Development",
+            "description": "Developed backend server with Python/Django, handled REST API with DRF, implemented login and reservation-related CRUD. Improved customer convenience with SmartStore crawling."
+          },
+          {
+            "title": "Flutter App Development",
+            "description": "Developed cross-platform app with Flutter, managed state with Provider package, applied MVVM design pattern."
+          },
+          {
+            "title": "Admin Page Development",
+            "description": "Developed admin page with Next.js."
+          }
+        ]
       }
-    },
+    ],
     "education": {
       "mokwon": {
         "school": "Mokwon University",

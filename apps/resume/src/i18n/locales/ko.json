@@ -56,40 +56,100 @@
     "gender": "남성 (He, Him)",
     "summary": "풀스택 엔지니어를 지향하며, 폭넓은 개발 경험을 통해 새로운 환경에서도 빠르게 학습하고 유연하게 적응하는 역량을 갖추고 있습니다.",
     "description": "• 웹 · 앱 · AI Agent 등 다수의 프로젝트를 주도적으로 경험한 풀스택 엔지니어입니다.\n• Node.js(Nest.js) 백엔드 개발을 중심으로 Django · FastAPI · Flutter 등 폭넓은 기술 스택을 실무에 활용해왔습니다.\n• Docker 컨테이니제이션 및 AWS · GCP · Cloudflare · NCP 등 다양한 클라우드 provider를 통해\n 인프라 구축 및 운영 경험 보유.\n• 로드 테스트 및 테스트 코드를 통한 안정적인 서비스 운영 경험. \n• 위와 같은 경험을 통해 새로운 기술과 환경을 빠르게 소화하는 능력을 갖추고 있습니다.",
-    "work": {
-      "eeboon": {
+    "work": [
+      {
         "company": "주식회사이분",
         "title": "풀스택 개발자",
         "location": "서울 대한민국",
         "start": "2025년 3월",
-        "end": "현재",
-        "description": "회사 프로덕트 풀스택 개발 및 유지보수 담당. 클라이언트 웹 어플리케이션, 관리자 대시보드, API 서비스 관리자 대시보드 개발 및 유지보수. Figma Plugin 유지보수. 프로덕트 전체 CI/CD 신규 구현 및 유지보수. 운영 환경 리팩토링하여 불필요한 코드, 저장소, AWS 클라우드 자원 등을 정리하여 가시성과 유지보수성 향상. API 응답시간 단축(수분 → 8초 이내). AI 모델 서빙 서버 최적화(24초 → 4초). pptx-automizer 라이브러리 분석 및 다중 요소 수정 로직 추가. AI 모델 서빙 서버를 레이어드 아키텍처 기반으로 리팩토링. Docker Compose + ECR 환경 최적화."
+        "end": "2025년 10월",
+        "description": "회사 프로덕트 풀스택 개발 및 유지보수 담당. 클라이언트 웹 어플리케이션, 관리자 대시보드, API 서비스 관리자 대시보드 개발 및 유지보수. Figma Plugin 유지보수. 프로덕트 전체 CI/CD 신규 구현 및 유지보수. 운영 환경 리팩토링하여 불필요한 코드, 저장소, AWS 클라우드 자원 등을 정리하여 가시성과 유지보수성 향상. API 응답시간 단축(수분 → 8초 이내). AI 모델 서빙 서버 최적화(24초 → 4초). pptx-automizer 라이브러리 분석 및 다중 요소 수정 로직 추가. AI 모델 서빙 서버를 레이어드 아키텍처 기반으로 리팩토링. Docker Compose + ECR 환경 최적화.",
+        "projects": [
+          {
+            "title": "회사 전체 프로덕트 풀스텍 개발 및 유지보수 담당",
+            "description": "- 클라이언트 웹 어플리케이션 개발 및 유지보수\n- 관리자 대시보드 개발 및 유지보수\n- 번역 API 외부 파트너사에 제공 및 유지보수\n- Figma Plugin 유지 보수\n- 프로덕트 전체 CI/CD 신규 구현 및 유지 보수"
+          },
+          {
+            "title": "운영 환경 리팩토링하여 유지보수성 향상",
+            "description": "불필요한 코드, 저장소, aws 클라우드 자원, 사내 문서를 정리하여 운영 환경의 가시성과 유지보수성 향상."
+          },
+          {
+            "title": "API 응답시간 단축",
+            "description": "- 제공 중인 번역 api의 불필요한 로직들을 선별하고 제거하여 응답시간을 3분에서 8초 이내로 단축함\n- AI 모델 서빙 서버(fastapi) 인스턴스 타입별 비용·성능 비교 + INT8 양자화 실험 + 최종 최적화 : 24초 -> 4초\n- 형태소 분석기(mecab)가 기존에는 콜드 스타트 였던 것을 찾아내서 -> 핫 스타트 방식으로 변경\n- 서버 스펙 확인 후 텍스트 임베딩 방식을 병렬 처리 -> 배치 처리 방식으로 변경하여 약 3초 정도 단축"
+          },
+          {
+            "title": "ppt파일 텍스트 리라이팅 기능 신규 개발",
+            "description": "- ECMA-376 Office Open XML file formats 문서 분석\n- pptx-automizer 라이브러리의 내부 구조를 분석\n- 해당 라이브러리는 중복된 elementId(<p:cNvPr>태그의 name 요소)는 수정이 불가능 함을 확인\n- 다중 요소 수정이 가능한 로직 추가함"
+          },
+          {
+            "title": "AI 모델 서빙 서버 구현",
+            "description": "- 단일 API 기반 서비스가 기능 확장으로 복잡도가 증가하여 이를 해결하기 위해 구조적인 문제를 분석해서 모듈화, 레이어드 아키텍처 기반으로 코드 구조를 리팩토링하여 유지보수성 향상\n- Docker Compose + ECR 환경을 최적화하여 이미지 빌드 및 배포 시간을 최소화하고 운영 효율을 개선함."
+          }
+        ]
       },
-      "tax": {
+      {
         "company": "함께하는 세무회계",
         "title": "백엔드 개발자",
         "location": "대한민국",
         "start": "2025년 2월",
         "end": "2025년 3월",
-        "description": "세무 회계 SaaS 백엔드 개발. Nest.js 백엔드 개발 담당. 다양한 계산 규칙(공제 항목, 비율 계산, 금액 범위 조건 등)을 반영한 비즈니스 로직 구현 및 모듈화."
+        "description": "세무 회계 SaaS 백엔드 개발. Nest.js 백엔드 개발 담당. 다양한 계산 규칙(공제 항목, 비율 계산, 금액 범위 조건 등)을 반영한 비즈니스 로직 구현 및 모듈화.",
+        "projects": [
+          {
+            "title": "세무 회계 SaaS 백엔드 개발",
+            "description": "다양한 계산 규칙(공제 항목, 비율 계산, 금액 범위 조건 등)을 반영한 비즈니스 로직 구현 및 모듈화."
+          }
+        ]
       },
-      "megapress": {
+      {
         "company": "주식회사 메가프레스",
         "title": "백엔드 개발자",
         "location": "대한민국",
         "start": "2023년 4월",
         "end": "2025년 1월",
-        "description": "Express에서 NestJS로 마이그레이션하여 표준화된 개발 환경 및 유지보수성 향상. 헥사고널 아키텍처 적용. Next.js/NestJS 서비스를 Turborepo + pnpm 기반 모노레포로 통합하여 공통 모듈 재사용 체계 구축 및 중복 코드 제거. ngrinder를 사용한 부하 테스트로 서비스 안정성 체크. AWS 인프라 관리(EC2 모니터링, 신규 사이트 도메인 세팅)."
+        "description": "Express에서 NestJS로 마이그레이션하여 표준화된 개발 환경 및 유지보수성 향상. 헥사고널 아키텍처 적용. Next.js/NestJS 서비스를 Turborepo + pnpm 기반 모노레포로 통합하여 공통 모듈 재사용 체계 구축 및 중복 코드 제거. ngrinder를 사용한 부하 테스트로 서비스 안정성 체크. AWS 인프라 관리(EC2 모니터링, 신규 사이트 도메인 세팅).",
+        "projects": [
+          {
+            "title": "NestJS 마이그레이션",
+            "description": "Express에서 NestJS로 마이그레이션하여 표준화된 개발 환경 및 유지보수성 향상. 헥사고널 아키텍처 적용."
+          },
+          {
+            "title": "모노레포 구축",
+            "description": "Next.js/NestJS 서비스를 Turborepo + pnpm 기반 모노레포로 통합하여 공통 모듈 재사용 체계 구축 및 중복 코드 제거."
+          },
+          {
+            "title": "부하 테스트 및 성능 검증",
+            "description": "ngrinder를 사용한 부하 테스트로 서비스 안정성 체크."
+          },
+          {
+            "title": "AWS 인프라 관리",
+            "description": "EC2 모니터링, 신규 사이트 도메인 세팅 등 AWS 인프라 관리."
+          }
+        ]
       },
-      "buymeslim": {
+      {
         "company": "바이미스림",
         "title": "풀스택 개발자(외주 프리랜서)",
         "location": "대한민국",
         "start": "2024년 9월",
         "end": "2025년 11월",
-        "description": "의류 피팅 예약 어플 개발 및 유지보수. Python/Django를 통한 백엔드 서버 개발, DRF를 사용한 REST API 처리, 로그인 및 예약 관련 CRUD 구현. 스마트스토어 크롤링으로 고객 편의성 향상. Flutter를 사용한 크로스플랫폼 앱 개발, Provider 패키지를 활용한 상태관리, MVVM 디자인 패턴 적용. Next.js를 사용한 admin 페이지 개발."
+        "description": "의류 피팅 예약 어플 개발 및 유지보수. Python/Django를 통한 백엔드 서버 개발, DRF를 사용한 REST API 처리, 로그인 및 예약 관련 CRUD 구현. 스마트스토어 크롤링으로 고객 편의성 향상. Flutter를 사용한 크로스플랫폼 앱 개발, Provider 패키지를 활용한 상태관리, MVVM 디자인 패턴 적용. Next.js를 사용한 admin 페이지 개발.",
+        "projects": [
+          {
+            "title": "백엔드 서버 개발",
+            "description": "Python/Django를 통한 백엔드 서버 개발, DRF를 사용한 REST API 처리, 로그인 및 예약 관련 CRUD 구현. 스마트스토어 크롤링으로 고객 편의성 향상."
+          },
+          {
+            "title": "Flutter 앱 개발",
+            "description": "Flutter를 사용한 크로스플랫폼 앱 개발, Provider 패키지를 활용한 상태관리, MVVM 디자인 패턴 적용."
+          },
+          {
+            "title": "관리자 페이지 개발",
+            "description": "Next.js를 사용한 admin 페이지 개발."
+          }
+        ]
       }
-    },
+    ],
     "education": {
       "mokwon": {
         "school": "목원대학교",
@@ -218,7 +278,7 @@
         "detail4": "다층 비용 맵 기반 최적 경로 탐색"
       },
       "implementation": {
-        "title": "라미 로보틱스 구현",
+        "title": "라미 로보��스 구현",
         "subtitle": "기술적 도전과 해결",
         "challenge1Title": "도전 1: 바이너리 프로토콜 구현",
         "challenge1Situation": "상황: 공식 SDK 없이 바이너리 프로토콜 직접 구현 필요",
