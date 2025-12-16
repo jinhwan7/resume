@@ -95,7 +95,12 @@
         "description": "Developed and maintained clothing fitting reservation app. Developed backend server with Python/Django, handled REST API with DRF, implemented login and reservation-related CRUD. Improved customer convenience with SmartStore crawling. Developed cross-platform app with Flutter, managed state with Provider package, applied MVVM design pattern. Developed admin page with Next.js."
       }
     },
-    "education": {},
+    "education": {
+      "mokwon": {
+        "school": "Mokwon University",
+        "degree": "Classical Composition Major, Department of Composition and Jazz (Withdrawn)"
+      }
+    },
     "projects": {},
     "hackathons": {},
     "publications": {}

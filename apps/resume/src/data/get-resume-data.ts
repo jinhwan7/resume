@@ -11,10 +11,20 @@ export function getResumeData(t: TFunction) {
     gender: t("data.gender"),
     description: t("data.description"),
     summary: t("data.summary"),
-    work: DATA.work.map((work: any) => ({
-      ...work,
-      projects: work.projects || [],
-    })),
+    work: DATA.work.map((work: any, index) => {
+      const keys = ["eeboon", "tax", "megapress", "buymeslim"];
+      const key = keys[index];
+      return {
+        ...work,
+        company: t(`data.work.${key}.company`),
+        title: t(`data.work.${key}.title`),
+        location: t(`data.work.${key}.location`),
+        start: t(`data.work.${key}.start`),
+        end: t(`data.work.${key}.end`),
+        description: t(`data.work.${key}.description`),
+        projects: work.projects || [],
+      };
+    }),
     education: DATA.education.map((edu: any) => ({
       ...edu,
       school: t("data.education.mokwon.school"),
