@@ -48,7 +48,11 @@ const personSchema = {
   email: data.contact.email,
   jobTitle: "Full Stack Engineer",
   description: data.description,
-  knowsAbout: data.skills.map((skill: any) => skill.name),
+  knowsAbout: [
+    ...data.skills.backend.map((skill: any) => skill.name),
+    ...data.skills.frontend.map((skill: any) => skill.name),
+    ...data.skills.devops.map((skill: any) => skill.name),
+  ],
   sameAs: [
     data.contact.twitter,
     data.contact.kakao,
@@ -77,7 +81,11 @@ const personSchema = {
       "@type": "Country",
       name: lang === 'ko' ? "대한민국" : "South Korea",
     },
-    skills: data.skills.map((skill: any) => skill.name).join(", "),
+    skills: [
+      ...data.skills.backend.map((skill: any) => skill.name),
+      ...data.skills.frontend.map((skill: any) => skill.name),
+      ...data.skills.devops.map((skill: any) => skill.name),
+    ].join(", "),
     description: data.description,
   },
 };

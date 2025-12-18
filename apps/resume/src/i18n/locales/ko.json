@@ -27,6 +27,11 @@
       "work": "경력",
       "education": "학력",
       "skills": "기술 스택",
+      "skillsBackend": "Backend",
+      "skillsFrontend": "Frontend",
+      "skillsDevOps": "DevOps",
+      "skillsDB": "DB",
+      "skillsMobile": "mobile",
       "projects": "프로젝트",
       "projectsSubtitle": "사이드 프로젝트 이력",
       "projectsDescription": "다양한 사이드 프로젝트 진행, 새로운 기술 탐구 및 아이디어 실현.",
@@ -55,11 +60,11 @@
     "birthDate": "1993-06-07",
     "gender": "남성 (He, Him)",
     "summary": "풀스택 엔지니어를 지향하며, 폭넓은 개발 경험을 통해 새로운 환경에서도 빠르게 학습하고 유연하게 적응하는 역량을 갖추고 있습니다.",
-    "description": "• 웹 · 앱 · AI Agent 등 다수의 프로젝트를 주도적으로 경험한 풀스택 엔지니어입니다.\n• Node.js(Nest.js) 백엔드 개발을 중심으로 Django · FastAPI · Flutter 등 폭넓은 기술 스택을 실무에 활용해왔습니다.\n• Docker 컨테이니제이션 및 AWS · GCP · Cloudflare · NCP 등 다양한 클라우드 provider를 통해\n 인프라 구축 및 운영 경험 보유.\n• 로드 테스트 및 테스트 코드를 통한 안정적인 서비스 운영 경험. \n• 위와 같은 경험을 통해 새로운 기술과 환경을 빠르게 소화하는 능력을 갖추고 있습니다.",
+    "description": "• 웹 · 앱 · AI Agent 등 다수의 프로젝트를 주도적으로 경험한 풀스택 엔지니어입니다.\n• Claude Code를 적극 활용합니다.\n• Node.js(Nest.js) 백엔드 개발을 중심으로 Django · FastAPI · Flutter 등 폭넓은 기술 스택을 실무에 활용해왔습니다.\n• Docker 컨테이니제이션 및 AWS · GCP · Cloudflare · NCP 등 다양한 클라우드 provider를 통해\n 인프라 구축 및 운영 경험 보유.\n• 로드 테스트 및 테스트 코드를 통한 안정적인 서비스 운영 경험. \n• 위와 같은 경험을 통해 새로운 기술과 환경을 빠르게 소화하는 능력을 갖추고 있습니다.",
     "work": [
       {
         "company": "주식회사이분",
-        "title": "풀스택 개발자",
+        "title": "AI 기반으로 NH투자증권, 삼성증권, 한화생명 등 금융권 대상 UX 라이팅 최적화 자동화 플랫폼",
         "location": "서울 대한민국",
         "start": "2025년 3월",
         "end": "2025년 10월",
@@ -89,7 +94,7 @@
       },
       {
         "company": "함께하는 세무회계",
-        "title": "백엔드 개발자",
+        "title": "세무회계 SaaS '와트' 제공",
         "location": "대한민국",
         "start": "2025년 2월",
         "end": "2025년 3월",
@@ -97,13 +102,13 @@
         "projects": [
           {
             "title": "세무 회계 SaaS 백엔드 개발",
-            "description": "다양한 계산 규칙(공제 항목, 비율 계산, 금액 범위 조건 등)을 반영한 비즈니스 로직 구현 및 모듈화."
+            "description": " - Nest.js 백엔드 개발 담당\n\n- 다양한 계산 규칙(공제 항목, 비율 계산, 금액 범위 조건 등)을 반영한 비즈니스 로직 구현 및 모듈화"
           }
         ]
       },
       {
         "company": "주식회사 메가프레스",
-        "title": "백엔드 개발자",
+        "title": "명함, 스티커, 전단지, 포토카드 등 각종 인쇄물 디자인 주문과 출력 서비스를 온라인으로 제공하는 쇼핑 플랫폼",
         "location": "대한민국",
         "start": "2023년 4월",
         "end": "2025년 1월",
@@ -115,7 +120,7 @@
           },
           {
             "title": "모노레포 구축",
-            "description": "Next.js/NestJS 서비스를 Turborepo + pnpm 기반 모노레포로 통합하여 공통 모듈 재사용 체계 구축 및 중복 코드 제거."
+            "description": "- 기존 여러개 레포로 분리되어있던 Next.js 프론트엔드와 NestJS 백엔드 레포를 Turborepo + pnpm 기반 모노레포로 통합하여, 공통 모듈 재사용 체계를 구축하고 중복 코드를 제거하며 전체 개발 생산성을 향상."
           },
           {
             "title": "부하 테스트 및 성능 검증",
@@ -129,7 +134,7 @@
       },
       {
         "company": "바이미스림",
-        "title": "풀스택 개발자(외주 프리랜서)",
+        "title": "찾아가는 피팅 룸 예약 서비스( 외주개발 )",
         "location": "대한민국",
         "start": "2024년 9월",
         "end": "2025년 11월",

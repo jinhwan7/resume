@@ -31,6 +31,11 @@
       "work": "Work Experience",
       "education": "Education",
       "skills": "Skills",
+      "skillsBackend": "Backend",
+      "skillsFrontend": "Frontend",
+      "skillsDevOps": "DevOps",
+      "skillsDB": "DB",
+      "skillsMobile": "mobile",
       "projects": "Projects",
       "projectsSubtitle": "Side Projects",
       "projectsDescription": "I've explored new technologies and realized ideas through various side projects.",
@@ -55,17 +60,16 @@
     "sideProjectsLink": "View Side Projects"
   },
   "data": {
-    "location": "South Korea",
-    "birthDate": "",
-    "age": "",
-    "gender": "",
-    "description": "Aspiring full-stack engineer who finds great joy in confirming performance improvements through actual testing and measurement.",
-    "summary": "Aspiring full-stack engineer who finds great joy in confirming performance improvements through actual testing and measurement. I enjoy directly applying new technologies and diverse knowledge, and love the exploratory process of gradually clarifying concepts that were previously unclear.",
+    "location": "Seoul, South Korea",
+    "birthDate": "1993-06-07",
+    "gender": "Male (He, Him)",
+    "summary": "Aspiring full-stack engineer with extensive development experience, capable of quickly learning and flexibly adapting to new environments.",
+    "description": "• Full-stack engineer with hands-on experience in web, app, AI Agent, and other projects.\n• Actively utilize Claude Code.\n• Extensive use of various tech stacks including Django, FastAPI, and Flutter, centered on Node.js (Nest.js) backend development.\n• Experience in infrastructure construction and operation through Docker containerization and various cloud providers such as AWS, GCP, Cloudflare, and NCP.\n• Experience in stable service operation through load testing and test code.\n• Through the above experiences, I have the ability to quickly digest new technologies and environments.",
     "work": [
       {
         "company": "Eeboon Inc.",
-        "title": "Full-Stack Developer",
-        "location": "South Korea",
+        "title": "AI-based UX writing optimization automation platform for financial institutions such as NH Investment & Securities, Samsung Securities, and Hanwha Life Insurance",
+        "location": "Seoul, South Korea",
         "start": "March 2025",
         "end": "October 2025",
         "description": "Responsible for full-stack development and maintenance of company products. Developed and maintained client web applications, admin dashboard, and API service admin dashboard. Maintained Figma Plugin. Implemented and maintained CI/CD for entire product suite. Refactored operating environment to improve visibility and maintainability by organizing unnecessary code, repositories, and AWS cloud resources. Reduced API response time (from minutes → within 8 seconds). Optimized AI model serving server (24 seconds → 4 seconds). Analyzed pptx-automizer library and added multi-element modification logic. Refactored AI model serving server based on layered architecture. Optimized Docker Compose + ECR environment.",
@@ -94,7 +98,7 @@
       },
       {
         "company": "Withuscpa",
-        "title": "Backend Developer",
+        "title": "Tax accounting SaaS 'WATT' provider",
         "location": "South Korea",
         "start": "February 2025",
         "end": "March 2025",
@@ -108,7 +112,7 @@
       },
       {
         "company": "Megapress Inc.",
-        "title": "Backend Developer",
+        "title": "Shopping platform providing online design ordering and printing services for business cards, stickers, flyers, photo cards, and other printed materials",
         "location": "South Korea",
         "start": "April 2023",
         "end": "January 2025",
@@ -120,7 +124,7 @@
           },
           {
             "title": "Monorepo Setup",
-            "description": "Integrated Next.js/NestJS services into Turborepo + pnpm-based monorepo to establish common module reuse system and eliminate duplicate code."
+            "description": "Integrated Next.js frontend and NestJS backend repositories, which were previously separated into multiple repos, into a Turborepo + pnpm-based monorepo to establish a common module reuse system, eliminate duplicate code, and improve overall development productivity."
           },
           {
             "title": "Load Testing and Performance Verification",
@@ -134,11 +138,11 @@
       },
       {
         "company": "Bymisslim",
-        "title": "Full-Stack Developer (Freelance)",
+        "title": "On-site fitting room reservation service (outsourced development)",
         "location": "South Korea",
         "start": "September 2024",
         "end": "November 2025",
-        "description": "Developed and maintained clothing fitting reservation app. Developed backend server with Python/Django, handled REST API with DRF, implemented login and reservation-related CRUD. Improved customer convenience with SmartStore crawling. Developed cross-platform app with Flutter, managed state with Provider package, applied MVVM design pattern. Developed admin page with Next.js.",
+        "description": "Clothing fitting reservation app development and maintenance. Developed backend server with Python/Django, handled REST API with DRF, implemented login and reservation-related CRUD. Improved customer convenience with SmartStore crawling. Developed cross-platform app with Flutter, managed state with Provider package, applied MVVM design pattern. Developed admin page with Next.js.",
         "projects": [
           {
             "title": "Backend Server Development",

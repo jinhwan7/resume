@@ -68,7 +68,7 @@ export const ResumeCard = ({
               <h3
                 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm"
                 style={{
-                  marginTop: title === "비바리퍼블리카(토스)" ? "4px" : "",
+                  marginTop: 0,
                 }}
               >
                 {title}
@@ -97,7 +97,7 @@ export const ResumeCard = ({
               </div>
             </div>
             {subtitle && (
-              <div className="font-sans text-xs mt-3">{subtitle}</div>
+              <div className="font-sans text-sm font-bold mt-3">{subtitle}</div>
             )}
           </CardHeader>
           {description && !projects && (
@@ -127,7 +127,7 @@ export const ResumeCard = ({
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 space-y-4"
+              className="mt-4 space-y-4"
             >
               {projects.map((project, index) => (
                 <div key={index}>
