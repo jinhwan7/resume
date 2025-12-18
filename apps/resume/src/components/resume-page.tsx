@@ -149,7 +149,7 @@ export default function ResumePage({
                 text={translations?.hero.title || "풀스택 엔지니어 진환입니다."}
               />
               <BlurFadeText
-                className="max-w-[600px] md:text-xl"
+                className="max-w-[600px] md:text-lg"
                 delay={BLUR_FADE_DELAY}
                 text={resumeData.summary}
               />
@@ -360,23 +360,6 @@ export default function ResumePage({
               </ul>
             </BlurFade>
 
-            {/* DevOps */}
-            <BlurFade delay={BLUR_FADE_DELAY * 8}>
-              <div className="font-semibold text-foreground">
-                {translations?.sections.skillsDevOps || "DevOps"}
-              </div>
-            </BlurFade>
-            <BlurFade delay={BLUR_FADE_DELAY * 8}>
-              <ul className="space-y-1 text-black dark:text-white">
-                {DATA.skills.devops.map((skill, id) => (
-                  <li key={id} className="flex items-start">
-                    <span className="mr-2">•</span>
-                    <span>{skill}</span>
-                  </li>
-                ))}
-              </ul>
-            </BlurFade>
-
             {/* DB */}
             <BlurFade delay={BLUR_FADE_DELAY * 9}>
               <div className="font-semibold text-foreground">
@@ -386,6 +369,23 @@ export default function ResumePage({
             <BlurFade delay={BLUR_FADE_DELAY * 9}>
               <ul className="space-y-1 text-black dark:text-white">
                 {DATA.skills.db.map((skill, id) => (
+                  <li key={id} className="flex items-start">
+                    <span className="mr-2">•</span>
+                    <span>{skill}</span>
+                  </li>
+                ))}
+              </ul>
+            </BlurFade>
+
+            {/* DevOps */}
+            <BlurFade delay={BLUR_FADE_DELAY * 8}>
+              <div className="font-semibold text-foreground">
+                {translations?.sections.skillsDevOps || "DevOps"}
+              </div>
+            </BlurFade>
+            <BlurFade delay={BLUR_FADE_DELAY * 8}>
+              <ul className="space-y-1 text-black dark:text-white">
+                {DATA.skills.devops.map((skill, id) => (
                   <li key={id} className="flex items-start">
                     <span className="mr-2">•</span>
                     <span>{skill}</span>
@@ -413,9 +413,7 @@ export default function ResumePage({
           </div>
         </div>
       </section>
-      {/* pdf로 바꿀 때 간격을 조절하기 위한 코드 */}
-      {/* <div className="border-t border-border my-16" />
-      <div className="my-16" /> */}
+      <div className="border-t" />
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 12}>

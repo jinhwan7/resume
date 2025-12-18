@@ -16,13 +16,16 @@ export const DATA = {
       "javascript, Typescript / NestJs",
       "java / spring boot",
       "python / Django, FastApi",
+      "kafka, rabbitmq",
     ],
-    frontend: ["React, NextJs"],
+    frontend: ["React, NextJs, Astro"],
+    db: ["postgresql, mssql, mysql", "mongoDB", "Redis"],
     devops: [
       "AWS : ec2, ALB, autoscailing, NAT gateway, RDS, Cloudfront, CloudFormation, route53, S3 etc...",
       "GCP",
+      "Docker, CI/CD( Github action )",
+      "cloudflare",
     ],
-    db: ["postgresql, mssql, mysql", "mongoDB", "Redis"],
     mobile: ["dart / flutter( ios, android )"],
   },
   navbar: [
@@ -52,43 +55,34 @@ export const DATA = {
       badges: [],
       location: "", // ko.json/en.json에서 가져옴
       title: "", // ko.json/en.json에서 가져옴
-      logoUrl: "/image/eeboon_logo.webp",
+      logoUrl: "", // ko.json/en.json에서 가져옴
       start: "", // ko.json/en.json에서 가져옴
       end: "", // ko.json/en.json에서 가져옴
       projects: [
         {
           title: "", // ko.json/en.json에서 가져옴
           description: "", // ko.json/en.json에서 가져옴
-          techStack: [
-            "Nestj.js",
-            "FastApi",
-            "React",
-            "AWS",
-            "CI/CD",
-            "Docker",
-            "styled-components",
-            "antd",
-          ],
+          techStack: [], // ko.json/en.json에서 가져옴
         },
         {
           title: "", // ko.json/en.json에서 가져옴
           description: "", // ko.json/en.json에서 가져옴
-          techStack: ["Github", "AWS", "MongoDB", "Notion"],
+          techStack: [], // ko.json/en.json에서 가져옴
         },
         {
           title: "", // ko.json/en.json에서 가져옴
           description: "", // ko.json/en.json에서 가져옴
-          techStack: ["Performance Optimization"],
+          techStack: [], // ko.json/en.json에서 가져옴
         },
         {
           title: "", // ko.json/en.json에서 가져옴
           description: "", // ko.json/en.json에서 가져옴
-          techStack: ["Python", "Architecture", "Performance"],
+          techStack: [], // ko.json/en.json에서 가져옴
         },
         {
           title: "", // ko.json/en.json에서 가져옴
           description: "", // ko.json/en.json에서 가져옴
-          techStack: ["Figma", "TypeScript"],
+          techStack: [], // ko.json/en.json에서 가져옴
         },
       ],
     },
@@ -98,14 +92,14 @@ export const DATA = {
       href: "",
       location: "", // ko.json/en.json에서 가져옴
       title: "", // ko.json/en.json에서 가져옴
-      logoUrl: "/image/withuscpa_logo.webp",
+      logoUrl: "", // ko.json/en.json에서 가져옴
       start: "", // ko.json/en.json에서 가져옴
       end: "", // ko.json/en.json에서 가져옴
       projects: [
         {
           title: "", // ko.json/en.json에서 가져옴
           description: "", // ko.json/en.json에서 가져옴
-          techStack: ["Nest.js", "TypeScript"],
+          techStack: [], // ko.json/en.json에서 가져옴
         },
       ],
     },
@@ -115,29 +109,24 @@ export const DATA = {
       badges: [],
       location: "", // ko.json/en.json에서 가져옴
       title: "", // ko.json/en.json에서 가져옴
-      logoUrl: "/image/printcity_logo.webp",
+      logoUrl: "", // ko.json/en.json에서 가져옴
       start: "", // ko.json/en.json에서 가져옴
       end: "", // ko.json/en.json에서 가져옴
       projects: [
         {
           title: "", // ko.json/en.json에서 가져옴
           description: "", // ko.json/en.json에서 가져옴
-          techStack: ["NestJS", "Express", "Architecture"],
+          techStack: [], // ko.json/en.json에서 가져옴
         },
         {
           title: "", // ko.json/en.json에서 가져옴
           description: "", // ko.json/en.json에서 가져옴
-          techStack: ["Turborepo", "pnpm", "Monorepo"],
+          techStack: [], // ko.json/en.json에서 가져옴
         },
         {
           title: "", // ko.json/en.json에서 가져옴
           description: "", // ko.json/en.json에서 가져옴
-          techStack: ["ngrinder", "Performance Testing"],
-        },
-        {
-          title: "", // ko.json/en.json에서 가져옴
-          description: "", // ko.json/en.json에서 가져옴
-          techStack: ["AWS", "EC2", "Infrastructure"],
+          techStack: [], // ko.json/en.json에서 가져옴
         },
       ],
     },
@@ -147,24 +136,24 @@ export const DATA = {
       badges: [],
       location: "", // ko.json/en.json에서 가져옴
       title: "", // ko.json/en.json에서 가져옴
-      logoUrl: "/image/bymisslim_logo.webp",
+      logoUrl: "", // ko.json/en.json에서 가져옴
       start: "", // ko.json/en.json에서 가져옴
       end: "", // ko.json/en.json에서 가져옴
       projects: [
         {
           title: "", // ko.json/en.json에서 가져옴
           description: "", // ko.json/en.json에서 가져옴
-          techStack: ["Python", "Django", "DRF", "Web Scraping"],
+          techStack: [], // ko.json/en.json에서 가져옴
         },
         {
           title: "", // ko.json/en.json에서 가져옴
           description: "", // ko.json/en.json에서 가져옴
-          techStack: ["Flutter", "Provider", "MVVM"],
+          techStack: [], // ko.json/en.json에서 가져옴
         },
         {
           title: "", // ko.json/en.json에서 가져옴
           description: "", // ko.json/en.json에서 가져옴
-          techStack: ["Next.js", "React"],
+          techStack: [], // ko.json/en.json에서 가져옴
         },
       ],
     },

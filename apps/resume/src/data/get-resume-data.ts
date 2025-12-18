@@ -18,7 +18,13 @@ export function getResumeData(t: TFunction) {
           return {
             ...project,
             title: t(`data.work.${index}.projects.${projectIndex}.title`),
-            description: t(`data.work.${index}.projects.${projectIndex}.description`),
+            description: t(
+              `data.work.${index}.projects.${projectIndex}.description`
+            ),
+            techStack: t(
+              `data.work.${index}.projects.${projectIndex}.techStack`,
+              { returnObjects: true }
+            ),
           };
         }) || [];
 
@@ -27,6 +33,7 @@ export function getResumeData(t: TFunction) {
         company: t(`data.work.${index}.company`),
         title: t(`data.work.${index}.title`),
         location: t(`data.work.${index}.location`),
+        logoUrl: t(`data.work.${index}.logoUrl`),
         start: t(`data.work.${index}.start`),
         end: t(`data.work.${index}.end`),
         description: t(`data.work.${index}.description`),
