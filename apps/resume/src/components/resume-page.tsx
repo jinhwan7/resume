@@ -413,8 +413,9 @@ export default function ResumePage({
           </div>
         </div>
       </section>
-      <div className="border-t border-border my-16" />
-      <div className="my-16" />
+      {/* pdf로 바꿀 때 간격을 조절하기 위한 코드 */}
+      {/* <div className="border-t border-border my-16" />
+      <div className="my-16" /> */}
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 12}>
