@@ -359,4 +359,38 @@ pre > code {
     height: auto !important;
     opacity: 1 !important;
   }
+
+  /* Allow page breaks in work section but prevent in others */
+  section:not(#work) {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Prevent page break between section title and content */
+  h2 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* Prevent page break inside cards and after them */
+  [class*="Card"],
+  [class*="card"] {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  /* Prevent orphaned section titles */
+  section h2 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* Remove extra spacing in print */
+  @media print {
+    .border-t {
+      display: none;
+    }
+  }
 }
