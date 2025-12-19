@@ -371,7 +371,7 @@ pre > code {
   /* Add top margin for work section when it starts on a new page (print only) */
   @media print {
     #work {
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
   }
 
@@ -394,12 +394,5 @@ pre > code {
   section h2 {
     page-break-after: avoid;
     break-after: avoid;
-  }
-
-  /* Remove extra spacing in print */
-  @media print {
-    .border-t {
-      display: none;
-    }
   }
 }

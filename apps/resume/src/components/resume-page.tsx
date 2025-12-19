@@ -44,7 +44,7 @@ const Spinner = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const BLUR_FADE_DELAY = 0.04;
+const BLUR_FADE_DELAY = 0.004;
 
 interface ResumePageProps {
   lang?: string;
@@ -413,9 +413,9 @@ export default function ResumePage({
           </div>
         </div>
       </section>
-      <div className="border-t" />
+
       <section id="work">
-        <div className="flex min-h-0 flex-col gap-y-3">
+        <div className="flex min-h-0 flex-col gap-y-1">
           <BlurFade delay={BLUR_FADE_DELAY * 12}>
             <h2 className="text-xl font-bold">
               {translations?.sections.work || "경력"}
