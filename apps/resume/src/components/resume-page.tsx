@@ -60,20 +60,20 @@ interface ResumePageProps {
       work: string;
       education: string;
       skills: string;
-      skillsBackend: string;
-      skillsFrontend: string;
-      skillsDevOps: string;
-      skillsDB: string;
-      skillsMobile: string;
+      skillsBackend?: string;
+      skillsFrontend?: string;
+      skillsDevOps?: string;
+      skillsDB?: string;
+      skillsMobile?: string;
       projects: string;
       projectsSubtitle: string;
       projectsDescription: string;
       publications: string;
       publicationsSubtitle: string;
       publicationsDescription: string;
-      hackathons: string;
-      hackathonsSubtitle: string;
-      hackathonsDescription: string;
+      certifications: string;
+      certificationsSubtitle: string;
+      certificationsDescription: string;
       contact: string;
     };
     publication: {
@@ -632,26 +632,25 @@ export default function ResumePage({
           </div>
         </div>
       </section> */}
-      {/* <section id="hackathons">
+      <section id="certifications">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  {translations?.sections.hackathons || "수상 및 자격증"}
+                  {translations?.sections.certifications || "수상 및 자격증"}
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  {translations?.sections.hackathonsSubtitle || "수상 이력"}
+                  {translations?.sections.certificationsSubtitle}
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  {translations?.sections.hackathonsDescription ||
-                    "다양한 공모전과 대회에서 수상한 경력과 보유 자격증입니다."}
+                  {translations?.sections.certificationsDescription}
                 </p>
               </div>
             </div>
           </BlurFade>
           <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-            {resumeData.hackathons.map((project, id) => (
+            {resumeData.certifications.map((project: any, id) => (
               <BlurFade
                 key={project.title + project.dates}
                 delay={BLUR_FADE_DELAY * 14 + id * 0.05}
@@ -670,7 +669,7 @@ export default function ResumePage({
             ))}
           </ul>
         </div>
-      </section> */}
+      </section>
       {/* <section id="contact">
         <div
           className="w-full pt-4 pb-8 sm:pb-4"

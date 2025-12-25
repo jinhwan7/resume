@@ -38,9 +38,9 @@
       "publications": "출판",
       "publicationsSubtitle": "출판 이력",
       "publicationsDescription": "기술과 개발에 대한 인사이트를 담은 저서.",
-      "hackathons": "수상 및 자격증",
-      "hackathonsSubtitle": "수상 이력",
-      "hackathonsDescription": "다양한 공모전과 대회에서 수상한 경력과 보유 자격증.",
+      "certifications": "수상 및 자격증",
+      "certificationsSubtitle": "보유 자격증",
+      "certificationsDescription": "",
       "contact": "연락처"
     },
     "publication": {
@@ -202,7 +202,36 @@
       }
     },
     "projects": {},
-    "hackathons": {},
+    "certifications": [
+      {
+        "title": "정보처리기사",
+        "dates": "2025년 12월 24일",
+        "location": "한국산업인력공단",
+        "description": "정보처리 기사 자격증 취득",
+        "win": "25203021100S"
+      },
+      {
+        "title": "전자기능사",
+        "dates": "2012년 12월 28일",
+        "location": "한국산업인력공단",
+        "description": "전자기능사 자격증 취득",
+        "win": "12405120481P"
+      },
+      {
+        "title": "전자캐드기능사",
+        "dates": "2012년 10월 19일",
+        "location": "한국산업인력공단",
+        "description": "전자캐드 기능사 자격증 취득",
+        "win": "12404130308B"
+      },
+      {
+        "title": "전산응용건축제도기능사",
+        "dates": "2014년 10월 17일",
+        "location": "한국산업인력공단",
+        "description": "전산응용건축제도 기능사 자격증 취득",
+        "win": "14404120639O"
+      }
+    ],
     "publications": {}
   },
   "portfolio": {

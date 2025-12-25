@@ -45,5 +45,13 @@ export function getResumeData(t: TFunction) {
       school: t("data.education.mokwon.school"),
       degree: t("data.education.mokwon.degree"),
     })),
+    certifications: DATA.certifications.map((cert: any, index: number) => ({
+      ...cert,
+      title: t(`data.certifications.${index}.title`),
+      dates: t(`data.certifications.${index}.dates`),
+      location: t(`data.certifications.${index}.location`),
+      description: t(`data.certifications.${index}.description`),
+      win: t(`data.certifications.${index}.win`),
+    })),
   };
 }

@@ -189,18 +189,44 @@ export const DATA = {
     //   video: "",
     // },
   ],
-  hackathons: [
+  certifications: [
     // TODO: 수상 및 자격증 정보 추가
-    // 예시:
-    // {
-    //   title: "수상명 또는 자격증명",
-    //   dates: "2024년 1월",
-    //   location: "주관 기관",
-    //   description: "설명",
-    //   image: "/image/award.webp",
-    //   win: "수상 등급 (선택 사항)",
-    //   links: [],
-    // },
+    {
+      title: "정보처리기사",
+      dates: "2025년 12월 24일",
+      location: "한국산업인력공단",
+      description: "정보처리 기사 자격증 취득",
+      image: "/image/hrdk.webp",
+      win: "25203021100S",
+      links: [],
+    },
+    {
+      title: "전자기능사",
+      dates: "2012년 12월 28일",
+      location: "한국산업인력공단",
+      description: "전자기능사 자격증 취득",
+      image: "/image/hrdk.webp",
+      win: "12405120481P",
+      links: [],
+    },
+    {
+      title: "전자캐드기능사",
+      dates: "2012년 10월 19일",
+      location: "한국산업인력공단",
+      description: "전자캐드 기능사 자격증 취득",
+      image: "/image/hrdk.webp",
+      win: "12404130308B",
+      links: [],
+    },
+    {
+      title: "전산응용건축제도기능사",
+      dates: "2014년 10월 17일",
+      location: "한국산업인력공단",
+      description: "전산응용건축제도 기능사 자격증 취득",
+      image: "/image/hrdk.webp",
+      win: "14404120639O",
+      links: [],
+    },
   ],
   publications: [
     // TODO: 출판 이력 추가 (블로그 글이나 기술 문서도 포함 가능)

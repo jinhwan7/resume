@@ -47,9 +47,9 @@ export function extractResumeTranslations(t: TFunction) {
       publications: t("resume.sections.publications"),
       publicationsSubtitle: t("resume.sections.publicationsSubtitle"),
       publicationsDescription: t("resume.sections.publicationsDescription"),
-      hackathons: t("resume.sections.hackathons"),
-      hackathonsSubtitle: t("resume.sections.hackathonsSubtitle"),
-      hackathonsDescription: t("resume.sections.hackathonsDescription"),
+      certifications: t("resume.sections.certifications"),
+      certificationsSubtitle: t("resume.sections.certificationsSubtitle"),
+      certificationsDescription: t("resume.sections.certificationsDescription"),
       contact: t("resume.sections.contact"),
     },
     publication: {

@@ -42,9 +42,9 @@
       "publications": "Publications",
       "publicationsSubtitle": "Published Works",
       "publicationsDescription": "Books containing insights on technology and development.",
-      "hackathons": "Awards & Certifications",
-      "hackathonsSubtitle": "Awards",
-      "hackathonsDescription": "Awards from various competitions and certifications I hold.",
+      "certifications": "Awards & Certifications",
+      "certificationsSubtitle": "Awards",
+      "certificationsDescription": "Awards from various competitions and certifications I hold.",
       "contact": "Contact"
     },
     "publication": {
@@ -206,7 +206,36 @@
       }
     },
     "projects": {},
-    "hackathons": {},
+    "certifications": [
+      {
+        "title": "Engineer Information Processing",
+        "dates": "December 24, 2025",
+        "location": "Human Resources Development Service of Korea",
+        "description": "Obtained Engineer Information Processing certification",
+        "win": "25203021100S"
+      },
+      {
+        "title": "Craftsman Electronics",
+        "dates": "December 28, 2012",
+        "location": "Human Resources Development Service of Korea",
+        "description": "Obtained Craftsman Electronics certification",
+        "win": "12405120481P"
+      },
+      {
+        "title": "Craftsman Electronic CAD",
+        "dates": "October 19, 2012",
+        "location": "Human Resources Development Service of Korea",
+        "description": "Obtained Craftsman Electronic CAD certification",
+        "win": "12404130308B"
+      },
+      {
+        "title": "Craftsman Computer Aided Architectural Drawing",
+        "dates": "October 17, 2014",
+        "location": "Human Resources Development Service of Korea",
+        "description": "Obtained Craftsman Computer Aided Architectural Drawing certification",
+        "win": "14404120639O"
+      }
+    ],
     "publications": {}
   },
   "portfolio": {
